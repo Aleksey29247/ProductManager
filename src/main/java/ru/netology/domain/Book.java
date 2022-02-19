@@ -13,9 +13,9 @@ public class Book extends Product {
         super(id, name, price);
         this.author = author;
     }
-    public void setAuthor(String str)
-    {
-        this.author=str;
+
+    public void setAuthor(String str) {
+        this.author = str;
     }
 
     @Override
@@ -24,14 +24,12 @@ public class Book extends Product {
         if (o == null || getClass() != o.getClass()) return false;
         if (!super.equals(o)) return false;
         Book book = (Book) o;
-        return id == book.id && price == book.price &&Objects.equals(author, book.author);
+        return id == book.id && price == book.price && Objects.equals(author, book.author);
     }
-
-
 
 
     @Override
     public int hashCode() {
-         return Objects.hash(super.hashCode(), author);
+        return Objects.hash(super.hashCode(), author);
     }
 }
