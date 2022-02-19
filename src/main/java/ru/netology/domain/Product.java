@@ -8,9 +8,9 @@ public class Product {
     public int price;
 
     public Product() {
-        this.id=0;
-        this.name="NULL";
-        this.price=0;
+        this.id = 0;
+        this.name = "NULL";
+        this.price = 0;
     }
 
     public Product(int id, String name, int price) {
@@ -18,8 +18,8 @@ public class Product {
         this.name = name;
         this.price = price;
     }
-    public int getId()
-    {
+
+    public int getId() {
         return this.id;
     }
 
@@ -27,11 +27,11 @@ public class Product {
         this.id = id;
     }
 
- public String getName() {
+    public String getName() {
         return this.name;
     }
 
-   public void setName(String name) {
+    public void setName(String name) {
         this.name = name;
     }
 
@@ -39,12 +39,11 @@ public class Product {
         return price;
     }
 
-   public void setPrice(int price) {
+    public void setPrice(int price) {
         this.price = price;
     }
 
-
-         @Override
+    @Override
     public int hashCode() {
         return Objects.hash(id, name, price);
     }

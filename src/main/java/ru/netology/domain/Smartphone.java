@@ -2,7 +2,7 @@ package ru.netology.domain;
 
 import java.util.Objects;
 
-public class Smartphone extends Product{
+public class Smartphone extends Product {
     private String manufacturer;
 
     public Smartphone() {
@@ -15,11 +15,11 @@ public class Smartphone extends Product{
     }
 
     public String getManufacturer() {
-       return this.manufacturer;
+        return this.manufacturer;
     }
 
     public void setManufacturer(String manufacturer) {
-       this.manufacturer = manufacturer;
+        this.manufacturer = manufacturer;
     }
 
     @Override
@@ -28,7 +28,7 @@ public class Smartphone extends Product{
         if (o == null || getClass() != o.getClass()) return false;
         if (!super.equals(o)) return false;
         Smartphone that = (Smartphone) o;
-        return  id == that.id && price == that.price && Objects.equals(manufacturer, that.manufacturer);
+        return id == that.id && price == that.price && Objects.equals(manufacturer, that.manufacturer);
     }
 
     @Override
